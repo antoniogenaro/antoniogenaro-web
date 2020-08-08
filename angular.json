@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "antoniogenaro-web"
+    }
+  },
+  "defaultProject": "antoniogenaro-web",
+  "cli": {
+    "analytics": "9e8a8535-14a5-4022-81e7-eed1cc659f8d"
+  }
 }

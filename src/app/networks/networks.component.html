@@ -1,0 +1,11 @@
+<div class="networks-container">
+  <a *ngFor="let network of networks" class="network-item" fxLayout="row" fxLayoutAlign="start center" [href]="network.url">
+    <div class="network-item-icon">
+      <i [class]="network.class"></i>
+    </div>
+    <div class="network-item-info">
+      <div class="network-item-name">{{network.networkName}}</div>
+      <div class="network-item-username">{{network.userName}}</div>
+    </div>
+  </a>
+</div>

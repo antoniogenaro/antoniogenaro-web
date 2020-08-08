@@ -1,0 +1,19 @@
+<div class="skills-container" fxLayout="row wrap" fxLayoutGap="10px grid">
+  <div *ngFor="let grouping of skills" [fxFlex]="grouping.fullWidth ? 100 : 50" fxFlex.lt-sm="100">
+    <div class="skill-grouping">
+      <div class="skill-grouping-name">{{grouping.name}}</div>
+      <div *ngFor="let skill of grouping.skills" class="skill-item" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="8px">
+        <div class="skill-item-favorite">
+          <i class="fas fa-star" *ngIf="skill.favorite"></i>
+        </div>
+        <div class="skill-item-name" fxFlex>{{ skill.name }}</div>
+        <div class="skill-item-value" *ngIf="skill.value">
+          <div class="skill-item-value-percent" [style.width.%]="getValuePercent(skill)"></div>
+          <div class="skill-item-value-separators-container" fxLayout="row">
+            <div *ngFor="let item of valuesSeparator" class="skill-item-value-separator-item" [style.width.%]="100 / maxValue"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

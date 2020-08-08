@@ -1,0 +1,22 @@
+.bio-container {
+  .bio-img {
+    margin-right: 10px;
+    img {
+      max-height: 150px;
+      max-width: 150px;
+      border-radius: 50%;
+      border: 2px solid;
+    }
+  }
+  .bio-info {
+    h1 {
+      margin: 0 0 10px;
+      color: var(--blue);
+    }
+    h2 {
+      margin: 0 0 10px;
+      color: var(--green);
+      font-weight: 300;
+    }
+  }
+}
