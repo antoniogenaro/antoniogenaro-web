@@ -1,0 +1,9 @@
+<div class="talks-container">
+  <a *ngFor="let talk of talks" fxLayout="column" class="talk-item" [href]="talk.url">
+    <div class="talk-item-name">{{ talk.name }}</div>
+    <div class="talk-item-place">{{ talk.place }}</div>
+    <div class="talk-item-date">
+      {{ talk.date | date: 'dd MMM yyyy' }}
+    </div>
+  </a>
+</div>

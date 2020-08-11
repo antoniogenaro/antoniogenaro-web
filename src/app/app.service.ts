@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { Skill, Experience, Bio, Network, SkillsGrouping } from './app.models';
+import { Skill, Experience, Bio, Network, SkillsGrouping, Talk } from './app.models';
 
 @Injectable({
   providedIn: 'root'
@@ -29,7 +29,8 @@ export class AppService {
           fullWidth: true,
           skills: [
             { name: 'JavaScript', favorite: true },
-            { name: 'TypeScript', favorite: true }
+            { name: 'TypeScript', favorite: true },
+            { name: 'Nx' }
           ]
         },
         {
@@ -64,7 +65,7 @@ export class AppService {
   getExperiences(): Observable<Experience[]> {
     return of<Experience[]>(
       [
-        { business: 'Coderty', startDate: new Date('2016-04'), work: 'Software developer' }
+        { business: 'Coderty', startDate: new Date('2016-04'), work: 'Software developer', url: 'https://coderty.com/' }
       ]
     );
   }
@@ -78,5 +79,18 @@ export class AppService {
         { networkName: 'Email', userName: 'hey@genaro.dev', url: 'mailto:hey@genaro.dev', class: 'fas fa-envelope' }
       ]
     );
+  }
+
+  getTalks(): Observable<Talk[]> {
+    return of<Talk[]>(
+      [
+        {
+          name: 'Opensourcing con cabeza: De Github a npm',
+          date: new Date('2017-10-26'),
+          place: 'AlmeriaJS',
+          url: 'https://www.meetup.com/es-ES/almeriajs/events/244461947/'
+        }
+      ]
+    )
   }
 }

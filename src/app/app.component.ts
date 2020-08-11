@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Skill, Experience, Bio, Network, SkillsGrouping } from './app.models';
+import { Skill, Experience, Bio, Network, SkillsGrouping, Talk } from './app.models';
 import { AppService } from './app.service';
 
 @Component({
@@ -13,6 +13,7 @@ export class AppComponent implements OnInit {
   skills$: Observable<SkillsGrouping[]>;
   experiences$: Observable<Experience[]>;
   networks$: Observable<Network[]>;
+  talks$: Observable<Talk[]>;
 
   constructor(private appService: AppService) {}
 
@@ -21,5 +22,6 @@ export class AppComponent implements OnInit {
     this.skills$ = this.appService.getSkills();
     this.experiences$ = this.appService.getExperiences();
     this.networks$ = this.appService.getNetworks();
+    this.talks$ = this.appService.getTalks();
   }
 }

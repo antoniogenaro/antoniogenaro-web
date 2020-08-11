@@ -1,15 +1,30 @@
 <div class="app-content">
-  <h2>Hi</h2>
-  <gen-bio [bio]="bio$ | async"></gen-bio>
+  <div fxLayout="row wrap" fxLayoutGap="10px grid">
+    <div fxFlex="100">
+      <h2>Hey</h2>
+      <gen-bio [bio]="bio$ | async"></gen-bio>
+    </div>
 
-  <h2>Skills</h2>
-  <gen-skills [skills]="skills$ | async"></gen-skills>
+    <div fxFlex="100">
+      <h2>Skills</h2>
+      <gen-skills [skills]="skills$ | async"></gen-skills>
+    </div>
 
-  <h2>Experience</h2>
-  <gen-experience [experiences]="experiences$ | async"></gen-experience>
+    <div fxFlex="50" fxFlex.lt-sm="100">
+      <h2>Experience</h2>
+      <gen-experience [experiences]="experiences$ | async"></gen-experience>
+    </div>
 
-  <h2>Where I am</h2>
-  <gen-networks [networks]="networks$ | async"></gen-networks>
-
+    <div fxFlex="50" fxFlex.lt-sm="100">
+      <h2>Talks</h2>
+      <gen-talks [talks]="talks$ | async"></gen-talks>
+    </div>
+    
+    <div fxFlex="100">
+      <h2>Where I am</h2>
+      <gen-networks [networks]="networks$ | async"></gen-networks>
+    </div>
+    
+  </div>
   <gen-footer></gen-footer>
 </div>

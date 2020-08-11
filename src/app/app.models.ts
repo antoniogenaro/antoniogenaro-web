@@ -15,6 +15,7 @@ export interface Experience {
   startDate: Date;
   endDate?: Date;
   work: string;
+  url: string;
 }
 
 export interface Bio {
@@ -29,5 +30,12 @@ export interface Network {
   networkName: string;
   userName: string;
   class: string;
+  url: string;
+}
+
+export interface Talk {
+  name: string;
+  place: string;
+  date: Date;
   url: string;
 }

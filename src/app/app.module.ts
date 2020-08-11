@@ -8,6 +8,7 @@ import { ExperienceComponent } from './experience/experience.component';
 import { BioComponent } from './bio/bio.component';
 import { NetworksComponent } from './networks/networks.component';
 import { FooterComponent } from './footer/footer.component';
+import { TalksComponent } from './talks/talks.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FooterComponent } from './footer/footer.component';
     ExperienceComponent,
     BioComponent,
     NetworksComponent,
-    FooterComponent
+    FooterComponent,
+    TalksComponent
   ],
   imports: [
     BrowserModule,

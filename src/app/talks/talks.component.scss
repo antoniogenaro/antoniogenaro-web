@@ -1,5 +1,5 @@
-.experiences-container {
-  .experience-item {
+.talks-container {
+  .talk-item {
     padding-bottom: 5px;
     margin-bottom: 5px;
     border-bottom: 1px solid;
@@ -8,15 +8,15 @@
     &:hover {
       text-decoration: underline;
     }
-    .experience-item-work {
+    .talk-item-name {
       font-size: 18px;
       color: var(--blue);
     }
-    .experience-item-business {
+    .talk-item-place {
       font-weight: 300;
       color: var(--green);
     }
-    .experience-item-dates {
+    .talk-item-date {
       font-size: 14px;
     }
   }
