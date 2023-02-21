@@ -1,17 +1,11 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Network } from '../app.models';
 
 @Component({
   selector: 'gen-networks',
   templateUrl: './networks.component.html',
-  styleUrls: ['./networks.component.scss']
+  styleUrls: ['./networks.component.scss'],
 })
-export class NetworksComponent implements OnInit {
+export class NetworksComponent {
   @Input() networks: Network[];
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
 }

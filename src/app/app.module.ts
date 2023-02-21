@@ -18,14 +18,10 @@ import { TalksComponent } from './talks/talks.component';
     BioComponent,
     NetworksComponent,
     FooterComponent,
-    TalksComponent
+    TalksComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FlexLayoutModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FlexLayoutModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

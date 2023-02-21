@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Skill, Experience, Bio, Network, SkillsGrouping, Talk } from './app.models';
+import { Bio, Experience, Network, SkillsGrouping, Talk } from './app.models';
 import { AppService } from './app.service';
 
 @Component({
   selector: 'gen-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
   bio$: Observable<Bio>;
