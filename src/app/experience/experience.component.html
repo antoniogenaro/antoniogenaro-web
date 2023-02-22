@@ -3,7 +3,9 @@
     *ngFor="let experience of experiences"
     fxLayout="column"
     class="experience-item"
-    [href]="experience.url">
+    [ngClass]="{ disabled: !experience.url }"
+    [href]="experience.url"
+    target="_blank">
     <div class="experience-item-work">{{ experience.work }}</div>
     <div class="experience-item-business">{{ experience.business }}</div>
     <div class="experience-item-dates">
