@@ -1,6 +1,5 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { FlexLayoutModule } from '@angular/flex-layout';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,12 +20,7 @@ import { TalksComponent } from './talks/talks.component';
     FooterComponent,
     TalksComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FlexLayoutModule,
-    HttpClientModule,
-  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })

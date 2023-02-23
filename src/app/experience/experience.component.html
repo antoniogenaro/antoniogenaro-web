@@ -1,14 +1,13 @@
-<div class="experiences-container">
+<div>
   <a
     *ngFor="let experience of experiences"
-    fxLayout="column"
-    class="experience-item"
-    [ngClass]="{ disabled: !experience.url }"
+    class="flex flex-col border-b py-1 hover:underline"
+    [ngClass]="{ 'pointer-events-none': !experience.url }"
     [href]="experience.url"
     target="_blank">
-    <div class="experience-item-work">{{ experience.work }}</div>
-    <div class="experience-item-business">{{ experience.business }}</div>
-    <div class="experience-item-dates">
+    <div class="text-lg text-blue">{{ experience.work }}</div>
+    <div class="font-light text-green">{{ experience.business }}</div>
+    <div class="text-sm">
       {{ experience.startDate | date : 'MMM yyyy' }} -
       {{
         experience.endDate ? (experience.endDate | date : 'MMM yyyy') : 'act.'

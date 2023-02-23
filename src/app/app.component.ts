@@ -15,7 +15,9 @@ export class AppComponent implements OnInit {
   networks$: Observable<Network[]>;
   talks$: Observable<Talk[]>;
 
-  constructor(private appService: AppService) {}
+  constructor(private appService: AppService) {
+    this.toggleDark(true);
+  }
 
   ngOnInit() {
     this.bio$ = this.appService.getBio();
@@ -23,5 +25,10 @@ export class AppComponent implements OnInit {
     this.experiences$ = this.appService.getExperiences();
     this.networks$ = this.appService.getNetworks();
     this.talks$ = this.appService.getTalks();
+  }
+
+  toggleDark(force?: boolean) {
+    const html = document.querySelector('html');
+    html.classList.toggle('dark', force);
   }
 }

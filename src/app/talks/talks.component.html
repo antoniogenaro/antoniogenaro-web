@@ -1,12 +1,11 @@
-<div class="talks-container">
+<div>
   <a
     *ngFor="let talk of talks"
-    fxLayout="column"
-    class="talk-item"
+    class="flex flex-col border-b py-1 hover:underline"
     [href]="talk.url">
-    <div class="talk-item-name">{{ talk.name }}</div>
-    <div class="talk-item-place">{{ talk.place }}</div>
-    <div class="talk-item-date">
+    <div class="text-lg text-blue">{{ talk.name }}</div>
+    <div class="font-light text-green">{{ talk.place }}</div>
+    <div class="text-sm">
       {{ talk.date | date : 'dd MMM yyyy' }}
     </div>
   </a>

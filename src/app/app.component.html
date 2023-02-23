@@ -1,27 +1,32 @@
-<div class="app-content">
-  <div fxLayout="row wrap" fxLayoutGap="10px grid">
-    <div fxFlex="100" *ngIf="bio$ | async as bio">
-      <h2>Hey</h2>
+<div class="m-auto max-w-screen-lg p-2">
+  <div class="p-2 text-right">
+    <button (click)="toggleDark()">
+      <i class="fa fa-lightbulb"></i>
+    </button>
+  </div>
+  <div class="flex flex-row flex-wrap gap-4">
+    <div class="basis-full" *ngIf="bio$ | async as bio">
+      <div class="text-2xl font-bold text-yellow">Hey</div>
       <gen-bio [bio]="bio"></gen-bio>
     </div>
 
-    <div fxFlex="100" *ngIf="experiences$ | async as experiences">
-      <h2>Experience</h2>
+    <div class="basis-full" *ngIf="experiences$ | async as experiences">
+      <div class="text-2xl font-bold text-yellow">Experience</div>
       <gen-experience [experiences]="experiences"></gen-experience>
     </div>
 
-    <div fxFlex="100" *ngIf="skills$ | async as skills">
-      <h2>Skills</h2>
+    <div class="basis-full" *ngIf="skills$ | async as skills">
+      <div class="text-2xl font-bold text-yellow">Skills</div>
       <gen-skills [skills]="skills"></gen-skills>
     </div>
 
-    <div fxFlex="100" *ngIf="talks$ | async as talks">
-      <h2>Talks</h2>
+    <div class="basis-full" *ngIf="talks$ | async as talks">
+      <div class="text-2xl font-bold text-yellow">Talks</div>
       <gen-talks [talks]="talks"></gen-talks>
     </div>
 
-    <div fxFlex="100" *ngIf="networks$ | async as networks">
-      <h2>Where I am</h2>
+    <div class="basis-full" *ngIf="networks$ | async as networks">
+      <div class="text-2xl font-bold text-yellow">Where I am</div>
       <gen-networks [networks]="networks"></gen-networks>
     </div>
   </div>

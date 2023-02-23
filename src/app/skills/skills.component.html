@@ -1,31 +1,16 @@
-<div class="skills-container" fxLayout="row wrap" fxLayoutGap="10px grid">
+<div class="flex flex-row flex-wrap">
   <div
     *ngFor="let grouping of skills"
-    [fxFlex]="grouping.fullWidth ? 100 : 50"
-    fxFlex.lt-sm="100">
-    <div class="skill-grouping">
-      <div class="skill-grouping-name">{{ grouping.name }}</div>
+    class="basis-full sm:basis-1/2 md:basis-1/3">
+    <div class="h-full border-b py-1">
+      <div class="text-xl font-light text-green">{{ grouping.name }}</div>
       <div
         *ngFor="let skill of grouping.skills"
-        class="skill-item"
-        fxLayout="row"
-        fxLayoutAlign="start center"
-        fxLayoutGap="8px">
-        <div class="skill-item-favorite">
+        class="flex flex-row items-center justify-start gap-2">
+        <div class="w-5">
           <i class="fas fa-star" *ngIf="skill.favorite"></i>
         </div>
-        <div class="skill-item-name" fxFlex>{{ skill.name }}</div>
-        <div class="skill-item-value" *ngIf="skill.value">
-          <div
-            class="skill-item-value-percent"
-            [style.width.%]="getValuePercent(skill)"></div>
-          <div class="skill-item-value-separators-container" fxLayout="row">
-            <div
-              *ngFor="let item of valuesSeparator"
-              class="skill-item-value-separator-item"
-              [style.width.%]="100 / maxValue"></div>
-          </div>
-        </div>
+        <div class="flex-1 text-lg text-blue">{{ skill.name }}</div>
       </div>
     </div>
   </div>

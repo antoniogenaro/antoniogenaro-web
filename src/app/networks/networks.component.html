@@ -1,16 +1,14 @@
-<div class="networks-container">
+<div>
   <a
     *ngFor="let network of networks"
-    class="network-item"
-    fxLayout="row"
-    fxLayoutAlign="start center"
+    class="flex flex-row items-center justify-start border-b py-1 hover:underline"
     [href]="network.url">
-    <div class="network-item-icon">
-      <i [class]="network.class"></i>
+    <div class="mr-2 w-6">
+      <i [ngClass]="network.class" class="text-2xl"></i>
     </div>
-    <div class="network-item-info">
-      <div class="network-item-name">{{ network.networkName }}</div>
-      <div class="network-item-username">{{ network.userName }}</div>
+    <div>
+      <div class="text-xs font-light text-green">{{ network.networkName }}</div>
+      <div class="text-blue">{{ network.userName }}</div>
     </div>
   </a>
 </div>

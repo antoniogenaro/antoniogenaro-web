@@ -16,6 +16,8 @@
       { "name": "Angular", "favorite": true },
       { "name": "Ionic", "favorite": true },
       { "name": "Rxjs", "favorite": true },
+      { "name": "Sass", "favorite": true },
+      { "name": "Tailwind" },
       { "name": "Stencil.js" }
     ]
   },
