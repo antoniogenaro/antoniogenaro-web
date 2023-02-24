@@ -12,7 +12,7 @@
 
     <div class="basis-full" *ngIf="experiences$ | async as experiences">
       <div class="text-2xl font-bold text-yellow">Experience</div>
-      <gen-experience [experiences]="experiences"></gen-experience>
+      <gen-experiences [experiences]="experiences"></gen-experiences>
     </div>
 
     <div class="basis-full" *ngIf="skills$ | async as skills">
