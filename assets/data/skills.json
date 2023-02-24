@@ -1,0 +1,33 @@
+[
+  {
+    "name": "General",
+    "fullWidth": true,
+    "skills": [
+      { "name": "JavaScript", "favorite": true },
+      { "name": "TypeScript", "favorite": true },
+      { "name": "Nx", "favorite": true },
+      { "name": "Git", "favorite": true },
+      { "name": "Runnerty" }
+    ]
+  },
+  {
+    "name": "Frontend",
+    "skills": [
+      { "name": "Angular", "favorite": true },
+      { "name": "Ionic", "favorite": true },
+      { "name": "Rxjs", "favorite": true },
+      { "name": "Sass", "favorite": true },
+      { "name": "Tailwind" },
+      { "name": "Stencil.js" }
+    ]
+  },
+  {
+    "name": "Backend",
+    "skills": [
+      { "name": "Node.js", "favorite": true },
+      { "name": "MySQL", "favorite": true },
+      { "name": "Nest.js" },
+      { "name": "GraphQL" }
+    ]
+  }
+]

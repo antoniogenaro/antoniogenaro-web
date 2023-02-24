@@ -1,0 +1,26 @@
+[
+  {
+    "networkName": "Github",
+    "userName": "antoniogenaro",
+    "url": "https://github.com/antoniogenaro",
+    "class": "fab fa-github"
+  },
+  {
+    "networkName": "Twitter",
+    "userName": "antoniogenaro8",
+    "url": "https://twitter.com/antoniogenaro8",
+    "class": "fab fa-twitter"
+  },
+  {
+    "networkName": "Linkedin",
+    "userName": "antoniogenaro",
+    "url": "https://www.linkedin.com/in/antoniogenaro",
+    "class": "fab fa-linkedin"
+  },
+  {
+    "networkName": "Email",
+    "userName": "hey@genaro.dev",
+    "url": "mailto:hey@genaro.dev",
+    "class": "fas fa-envelope"
+  }
+]
